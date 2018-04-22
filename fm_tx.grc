@@ -707,7 +707,7 @@
     </param>
     <param>
       <key>gain0</key>
-      <value>0</value>
+      <value>rf_gain</value>
     </param>
     <param>
       <key>ant10</key>
@@ -1988,6 +1988,49 @@
     <param>
       <key>type</key>
       <value>fff</value>
+    </param>
+  </block>
+  <block>
+    <key>parameter</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(576, 524)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>rf_gain</value>
+    </param>
+    <param>
+      <key>label</key>
+      <value>RF gain</value>
+    </param>
+    <param>
+      <key>short_id</key>
+      <value>g</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>intx</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>0</value>
     </param>
   </block>
   <connection>
