@@ -82,6 +82,69 @@
     </param>
   </block>
   <block>
+    <key>variable_qtgui_range</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>audio_rate/4</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(128, 236)</value>
+    </param>
+    <param>
+      <key>gui_hint</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>audio_center</value>
+    </param>
+    <param>
+      <key>label</key>
+      <value>Audio output center frequency</value>
+    </param>
+    <param>
+      <key>min_len</key>
+      <value>200</value>
+    </param>
+    <param>
+      <key>orient</key>
+      <value>Qt.Horizontal</value>
+    </param>
+    <param>
+      <key>start</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>step</key>
+      <value>100</value>
+    </param>
+    <param>
+      <key>stop</key>
+      <value>audio_rate/2</value>
+    </param>
+    <param>
+      <key>rangeType</key>
+      <value>float</value>
+    </param>
+    <param>
+      <key>widget</key>
+      <value>counter_slider</value>
+    </param>
+  </block>
+  <block>
     <key>variable</key>
     <param>
       <key>comment</key>
@@ -161,69 +224,6 @@
     <param>
       <key>stop</key>
       <value>40</value>
-    </param>
-    <param>
-      <key>rangeType</key>
-      <value>float</value>
-    </param>
-    <param>
-      <key>widget</key>
-      <value>counter_slider</value>
-    </param>
-  </block>
-  <block>
-    <key>variable_qtgui_range</key>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>value</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(128, 236)</value>
-    </param>
-    <param>
-      <key>gui_hint</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>harmonic</value>
-    </param>
-    <param>
-      <key>label</key>
-      <value>Harmonic</value>
-    </param>
-    <param>
-      <key>min_len</key>
-      <value>200</value>
-    </param>
-    <param>
-      <key>orient</key>
-      <value>Qt.Horizontal</value>
-    </param>
-    <param>
-      <key>start</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>step</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>stop</key>
-      <value>7</value>
     </param>
     <param>
       <key>rangeType</key>
@@ -567,7 +567,7 @@
     </param>
     <param>
       <key>center_freq</key>
-      <value>-offtune-(audio_rate/4)</value>
+      <value>-offtune-audio_center</value>
     </param>
     <param>
       <key>comment</key>
@@ -630,7 +630,7 @@
     </param>
     <param>
       <key>fc</key>
-      <value>center_freq*harmonic</value>
+      <value>center_freq</value>
     </param>
     <param>
       <key>freqchangevar</key>
@@ -844,11 +844,11 @@
     </param>
     <param>
       <key>freq0</key>
-      <value>1000*center_freq*harmonic+offtune</value>
+      <value>1000*center_freq+offtune</value>
     </param>
     <param>
       <key>gain_mode0</key>
-      <value>True</value>
+      <value>False</value>
     </param>
     <param>
       <key>if_gain0</key>
