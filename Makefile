@@ -1,4 +1,4 @@
-all: fm_tx.py turnoff.py deviation_test.py drm_receiver.py
+all: fm_tx.py turnoff.py deviation_test.py drm_receiver.py frequency_sweep.py
 
 drm_receiver.py: drm_receiver.grc
 	grcc drm_receiver.grc -d .
@@ -13,5 +13,8 @@ turnoff.py: turnoff.grc
 deviation_test.py: deviation_test.grc
 	grcc deviation_test.grc -d .
 
+frequency_sweep.py: frequency_sweep.grc
+	grcc frequency_sweep.grc -d .
+
 clean:
-	rm -f fm_tx.py turnoff.py deviation_test.py drm_receiver.py
+	rm -f fm_tx.py turnoff.py deviation_test.py drm_receiver.py frequency_sweep.py
