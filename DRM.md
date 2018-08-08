@@ -77,3 +77,11 @@ which enables writing I/Q samples to stdout when used with
 TODO Other options still need investigating, especially high quality IQ mode
 
 TODO setting up limesdr transmitter
+
+## Transmitting
+
+	{ sleep 6; chrt --rr 95 ./dream -t; } | chrt --rr 95 ./iq_tx.py -f 144.7
+
+Scaling:
+
+	chrt --rr 95 ./dream -t | sox -t raw -r 48k -e signed -b 16 -c 2 - -n stat
