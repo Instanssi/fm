@@ -80,7 +80,7 @@ TODO setting up limesdr transmitter
 
 ## Transmitting
 
-	{ sleep 6; chrt --rr 95 ./dream -t; } | chrt --rr 95 ./iq_tx.py -f 144.7
+	{ sleep 6; chrt --rr 95 ./dream -t; } | ./lime_iq_tx.py -f 144.7
 
 Scaling:
 

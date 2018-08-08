@@ -4,3 +4,6 @@
 /frequency_sweep.py
 /frequency_sweep_erotin.py
 /lime_iq_tx.py
+
+# DRM encoder configuration
+/Dream.ini
