@@ -411,6 +411,49 @@
     </param>
   </block>
   <block>
+    <key>parameter</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(216, 412)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>frequency</value>
+    </param>
+    <param>
+      <key>label</key>
+      <value>Center frequency (MHz)</value>
+    </param>
+    <param>
+      <key>short_id</key>
+      <value>f</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>eng_float</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>434.400</value>
+    </param>
+  </block>
+  <block>
     <key>epy_block</key>
     <param>
       <key>alias</key>
@@ -473,50 +516,7 @@ class blk(gr.sync_block):  # other base classes are basic_block, decim_block, in
     </param>
     <param>
       <key>id</key>
-      <value>erotin</value>
-    </param>
-  </block>
-  <block>
-    <key>parameter</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(216, 412)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>frequency</value>
-    </param>
-    <param>
-      <key>label</key>
-      <value>Center frequency (MHz)</value>
-    </param>
-    <param>
-      <key>short_id</key>
-      <value>f</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>eng_float</value>
-    </param>
-    <param>
-      <key>value</key>
-      <value>434.400</value>
+      <value>frequency_sweep_erotin</value>
     </param>
   </block>
   <block>
@@ -1578,7 +1578,7 @@ class blk(gr.sync_block):  # other base classes are basic_block, decim_block, in
   </connection>
   <connection>
     <source_block_id>analog_sig_source_x_0</source_block_id>
-    <sink_block_id>erotin</sink_block_id>
+    <sink_block_id>frequency_sweep_erotin</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -1601,31 +1601,31 @@ class blk(gr.sync_block):  # other base classes are basic_block, decim_block, in
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>erotin</source_block_id>
+    <source_block_id>frequency_sweep_erotin</source_block_id>
     <sink_block_id>analog_frequency_modulator_fc_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>erotin</source_block_id>
+    <source_block_id>frequency_sweep_erotin</source_block_id>
     <sink_block_id>qtgui_time_sink_x_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>erotin</source_block_id>
+    <source_block_id>frequency_sweep_erotin</source_block_id>
     <sink_block_id>blocks_float_to_complex_0</sink_block_id>
     <source_key>1</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>erotin</source_block_id>
+    <source_block_id>frequency_sweep_erotin</source_block_id>
     <sink_block_id>qtgui_number_sink_0</sink_block_id>
     <source_key>1</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>erotin</source_block_id>
+    <source_block_id>frequency_sweep_erotin</source_block_id>
     <sink_block_id>qtgui_time_sink_x_0</sink_block_id>
     <source_key>1</source_key>
     <sink_key>1</sink_key>
