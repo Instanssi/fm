@@ -82,6 +82,53 @@
     </param>
   </block>
   <block>
+    <key>variable_qtgui_check_box</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>false</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(16, 204)</value>
+    </param>
+    <param>
+      <key>gui_hint</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>agc</value>
+    </param>
+    <param>
+      <key>label</key>
+      <value>AGC</value>
+    </param>
+    <param>
+      <key>true</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>bool</value>
+    </param>
+  </block>
+  <block>
     <key>variable_qtgui_range</key>
     <param>
       <key>comment</key>
@@ -97,7 +144,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(128, 236)</value>
+      <value>(136, 324)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -160,7 +207,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(480, 332)</value>
+      <value>(480, 308)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -215,7 +262,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(8, 236)</value>
+      <value>(16, 324)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -274,7 +321,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(288, 516)</value>
+      <value>(8, 84)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -305,7 +352,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(184, 372)</value>
+      <value>(312, 324)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -427,7 +474,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(152, 508)</value>
+      <value>(336, 460)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -470,7 +517,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(8, 492)</value>
+      <value>(192, 460)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -482,7 +529,7 @@
     </param>
     <param>
       <key>label</key>
-      <value>Audio rate in Hz</value>
+      <value>Audio rate (Hz)</value>
     </param>
     <param>
       <key>short_id</key>
@@ -603,7 +650,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(8, 372)</value>
+      <value>(16, 460)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -615,7 +662,7 @@
     </param>
     <param>
       <key>label</key>
-      <value>Center frequency in kHz</value>
+      <value>Center frequency (Hz)</value>
     </param>
     <param>
       <key>short_id</key>
@@ -627,7 +674,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>434400</value>
+      <value>434400000</value>
     </param>
   </block>
   <block>
@@ -701,7 +748,7 @@
     </param>
     <param>
       <key>fc</key>
-      <value>center_freq</value>
+      <value>center_freq+offtune</value>
     </param>
     <param>
       <key>freqchangevar</key>
@@ -915,11 +962,11 @@
     </param>
     <param>
       <key>freq0</key>
-      <value>1000*center_freq+offtune</value>
+      <value>center_freq+offtune</value>
     </param>
     <param>
       <key>gain_mode0</key>
-      <value>False</value>
+      <value>agc</value>
     </param>
     <param>
       <key>if_gain0</key>
