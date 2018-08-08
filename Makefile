@@ -14,4 +14,4 @@ frequency_sweep.py: frequency_sweep.grc
 	grcc frequency_sweep.grc -d .
 
 clean:
-	rm -f fm_tx.py limesdr_iq_tx.py drm_receiver.py frequency_sweep.py
+	rm -f fm_tx.py lime_iq_tx.py drm_receiver.py frequency_sweep.py frequency_sweep_erotin.py
