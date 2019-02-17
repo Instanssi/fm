@@ -9,6 +9,17 @@ encoder.
 pacmd load-module module-null-sink sink_name=to_radio
 ```
 
+## gr-limesdr
+
+	sudo apt install cmake
+	git clone https://github.com/myriadrf/gr-limesdr
+	cd gr-limesdr
+	mkdir build
+	cd build
+	cmake ..
+	make
+	sudo make install
+
 ## Dream
 
 Dream is a free software DRM encoder. The code quality varies but it
@@ -80,7 +91,17 @@ TODO setting up limesdr transmitter
 
 ## Transmitting
 
-	{ sleep 6; chrt --rr 95 ./dream -t; } | ./lime_iq_tx.py -f 144.7
+First, find your LimeSDR serial number and type by running:
+
+	LimeUtil --find
+
+See `./lime_iq_tx.py --help` for usage instructions. For sure, you
+need to define device type (-d), serial number (-s), band setting
+(-b), frequency (-f), and gain (-g).
+
+The following example is for my LimeSDR Mini:
+
+	{ sleep 6; chrt --rr 95 ./dream -t; } | ./lime_iq_tx.py -f 144.7M -s 1D3AD649AC230B -g 60
 
 Scaling:
 
