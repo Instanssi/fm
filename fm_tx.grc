@@ -128,60 +128,6 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(224, 396)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>minimal_multiplier</value>
-    </param>
-    <param>
-      <key>value</key>
-      <value>5e6/audio_rate</value>
-    </param>
-  </block>
-  <block>
-    <key>variable</key>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(312, 468)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>multiplier</value>
-    </param>
-    <param>
-      <key>value</key>
-      <value>int(2**math.ceil(math.log(minimal_multiplier,2)))</value>
-    </param>
-  </block>
-  <block>
-    <key>variable</key>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
       <value>(224, 540)</value>
     </param>
     <param>
@@ -760,7 +706,7 @@
     </param>
     <param>
       <key>oversample</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>rf_freq</key>
@@ -769,6 +715,53 @@
     <param>
       <key>samp_rate</key>
       <value>multiplier*audio_rate</value>
+    </param>
+  </block>
+  <block>
+    <key>parameter</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(736, 516)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>multiplier</value>
+    </param>
+    <param>
+      <key>label</key>
+      <value>Interpolate audio before modulation</value>
+    </param>
+    <param>
+      <key>short_id</key>
+      <value>m</value>
+    </param>
+    <param>
+      <key>hide</key>
+      <value>none</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>intx</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>16</value>
     </param>
   </block>
   <block>
